@@ -91,8 +91,26 @@
         "id":12,
         "name":"Vynil",
         "category":"Music",
-        "specificity": "",
+        "specificity": "Album",
         "price" : "25€",
-        "image":"img/Merch/tshirt women.png"
+        "image":"img/Merch/Vinyl Record2.png"
+    },
+    {
+        "id":13,
+        "name":"Vynil - Collector",
+        "category":"Music",
+        "specificity": "Album Collector",
+        "price" : "25€",
+        "image":"img/Merch/Vinyl Record3.png"
+    },
+    {
+        "id":14,
+        "name":"Vynil",
+        "category":"Music",
+        "specificity": "Single",
+        "price" : "10€",
+        "image":"img/Merch/Vinyl Record single.png"
     }
+
+
 ]
