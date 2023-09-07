@@ -1,0 +1,157 @@
+/* NORMALIZER */
+* {
+    box-sizing: border-box;
+}
+body {
+    background-image: url(../img/BG.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position : center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+ul, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+    background: none;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+@font-face {
+    font-family: 'banger';
+    src: url(../fonts/Bangers/Bangers-Regular.ttf);
+}
+
+footer,
+header,
+.musique,
+.news,
+.ontour,
+.merch,
+.newsletter,
+.fb,
+.insta,
+.ytb {
+    opacity: 1;
+}
+
+footer,
+header,
+.musique:hover,
+.news:hover,
+.ontour:hover,
+.merch:hover,
+.newsletter:hover,
+.fb:hover,
+.insta:hover,
+.ytb:hover {
+    opacity: 0.5;
+}
+
+header {
+    font-family: 'banger';
+    /* background-color:black;
+    background-image: var(--bs-gradient); */
+    
+    position:sticky;
+    top: 0;
+    left: 0;
+    
+}
+
+nav {
+    border-top: #00ff66 solid 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 5px 5px 5px rgb(179, 178, 178);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    vertical-align:middle;
+}
+
+nav img{
+    vertical-align:middle;
+    width: 10%;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 15%;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(45, 45, 45);
+    font-size: 24px;
+}
+
+footer img{
+    width: 10%;
+}
+
+footer ul li {
+    display: inline-block;
+    width: 15%;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: rgb(45, 45, 45);
+    font-size: 100%;
+}
+
+
+
+
+main {
+    font-family: 'banger';
+}
+
+footer {
+    font-family: 'banger';
+    background-color: #FFFFFF;
+    background-image: var(--bs-gradient);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+}
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-itm {}
+
+.product-ttl {
+
+}
+.product-price {
+}
+
+.product-img {
+    width: 50%;
+}

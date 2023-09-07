@@ -1,0 +1,73 @@
+
+body {
+    background-image: url(../img/BG.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:bottom;
+}
+
+
+footer,
+header,
+.musique,
+.news,
+.ontour,
+.merch,
+.newsletter,
+.fb,
+.insta,
+.ytb {
+    opacity: 1;
+}
+
+footer,
+header,
+.musique:hover,
+.news:hover,
+.ontour:hover,
+.merch:hover,
+.newsletter:hover,
+.fb:hover,
+.insta:hover,
+.ytb:hover {
+    opacity: 0.5;
+}
+
+@font-face {
+    font-family: 'banger';
+    src: url(../fonts/Bangers/Bangers-Regular.ttf);
+}
+
+footer {
+    font-family: 'banger';
+    background-color: #FFFFFF;
+    background-image: var(--bs-gradient);
+    display: block;
+    justify-content: end;
+}
+
+main {
+    font-family: 'banger';
+}
+header {
+    font-family: 'banger';
+    background-image: var(--bs-gradient);
+}
+
+.logoDoodskus {
+    max-height:  20%; 
+}
+
+
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.product-itm {}
+.product-ttl {}
+.product-img {
+    width: 100%;
+}
