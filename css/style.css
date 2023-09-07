@@ -42,31 +42,14 @@ button:focus {
     src: url(../fonts/Bangers/Bangers-Regular.ttf);
 }
 
-footer,
-header,
-.musique,
-.news,
-.ontour,
-.merch,
-.newsletter,
-.fb,
-.insta,
-.ytb {
+nav a{
     opacity: 1;
 }
 
-footer,
-header,
-.musique:hover,
-.news:hover,
-.ontour:hover,
-.merch:hover,
-.newsletter:hover,
-.fb:hover,
-.insta:hover,
-.ytb:hover {
+nav a:hover {
     opacity: 0.5;
 }
+
 
 header {
     font-family: 'banger';
@@ -80,34 +63,71 @@ header {
 }
 
 nav {
-    border-top: #00ff66 solid 12px;
     padding-top: 10px;
     padding-bottom: 10px;
-    box-shadow: 5px 5px 5px rgb(179, 178, 178);
+    box-shadow: 0px 5px 5px rgb(179, 178, 178);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    vertical-align:middle;
+    height: 15vh;
+    background-color: #bbbbbbee;
+
+
 }
 
 nav img{
-    vertical-align:middle;
-    width: 10%;
+    justify-content: flex-start;
+    text-align: center;
+    display: flex;  
+    max-height: 100px;
+}
+nav a{
+    display: flex;
+    align-items: center;
+    justify-content:flex-start;
+}
+nav ul{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 nav ul li {
     display: inline-block;
     width: 15%;
+    
 }
 
 
 nav ul li a {
     text-decoration: none;
-    color: rgb(45, 45, 45);
+    color: rgba(0, 0, 0, 0.759);
     font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
+footer {
+    font-family: 'banger';
+    background-color: #FFFFFF;
+    background-image: var(--bs-gradient);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) ;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    
+}
 footer img{
     width: 10%;
+}
+footer ul{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 footer ul li {
@@ -128,30 +148,33 @@ main {
     font-family: 'banger';
 }
 
-footer {
-    font-family: 'banger';
-    background-color: #FFFFFF;
-    background-image: var(--bs-gradient);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    
-}
 .products {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    background-color: #ffffffa3;
+    box-shadow: 5px 5px 5px rgb(179, 178, 178);
+
 }
 
-.product-itm {}
+.product-itm {
+    box-shadow: 5px 5px 5px rgb(179, 178, 178);
+    display: block;
+    justify-items: center;
+    text-align: center;
+    
+}
 
 .product-ttl {
-
+    padding-top: 5%;
+    
 }
 .product-price {
 }
 
 .product-img {
-    width: 50%;
+opacity: 1;
+    max-height: 200px;
+}
+.product-img:hover{
+    opacity: 0.5;
 }

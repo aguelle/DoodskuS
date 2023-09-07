@@ -4,14 +4,12 @@ async function fetchMerchData(url) {
   try {
     const response = await fetch(url);
     return await response.json();
-  }
-  catch (e) {
+  } catch (e) {
     console.error("Impossible de charger les données : " + e);
   }
 }
 
-fetchMerchData('datas/merch.json')
-.then(displayProducts);
+fetchMerchData("datas/merch.json").then(displayProducts);
 
 // 2.display on the page
 
@@ -37,7 +35,7 @@ function createProductElement(product) {
 
   // Put the name
   productElement.querySelector(".product-ttl").textContent = product.name;
- 
+
   // Put the price
   productElement.querySelector(".product-price").textContent = product.price;
 
