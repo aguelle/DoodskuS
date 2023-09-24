@@ -1,48 +1,15 @@
-// 1.récupérer les données json
+let sidenav = document.getElementById("mySidenav");
+let openBtn = document.getElementById("openBtn");
+let closeBtn = document.getElementById("closeBtn");
 
-async function fetchMerchData(url) {
-  try {
-    const response = await fetch(url);
-    return await response.json();
-  } catch (e) {
-    console.error("Impossible de charger les données : " + e);
-  }
+openBtn.onclick = openNav;
+closeBtn.onclick = closeNav;
+
+/* Set the width of the side navigation to 250px */
+function openNav() {
+  sidenav.classList.add("active");
 }
-
-fetchMerchData("datas/merch.json").then(displayProducts);
-
-// 2.display on the page
-
-function displayProducts(products) {
-  const productsContainer = document.getElementById("products-container");
-  for (const product of products) {
-    productsContainer.appendChild(createProductElement(product));
-  }
-}
-
-function displayProducts(products) {
-  document
-    .getElementById("products-container")
-    .append(...products.map(createProductElement));
-}
-
-function createProductElement(product) {
-  // Copy template
-  const productElement = document.importNode(
-    document.getElementById("product-template").content,
-    true
-  );
-
-  // Put the name
-  productElement.querySelector(".product-ttl").textContent = product.name;
-
-  // Put the price
-  productElement.querySelector(".product-price").textContent = product.price;
-
-  // Change image
-  const img = productElement.querySelector(".product-img");
-  img.src = product.image;
-  img.alt = product.name;
-
-  return productElement;
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  sidenav.classList.remove("active");
 }

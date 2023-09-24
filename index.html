@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleburger.css">
 
-    <title>DoodskuS</title>
+    <title>🤘DoodskuS🤘</title>
 </head>
 
 
@@ -20,11 +20,28 @@
 
 
     <header>
+        <!-- nav mobile -->
+        <nav>
+            <div id="mySidenav" class="sidenav hidden">
+                <a href=""><img src="./img/Icones/crosswhite.png" id="closeBtn" href="#" class="close">
+                </a>
+                    <ul>
+                  <li><a href="#">Musique</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">On Tour</a></li>
+                  <li><a href="#">Merch</a></li>
+                </ul>
+              </div>
+                    <a href="#"><img src="./img/Icones/burgerblack.png" id="openBtn" href="#" class="burger hidden" >
+              </a>
+            </nav>
+
+            <!-- nav desktop -->
         <nav>
 
             <a href="index.html"> <img id="logo-nav" src="img/Logos/logo3Resize.png"></a>
 
-            <ul>
+            <ul class="nav-hidden" >
                 <li>
                     <a href="musique.html">Musique</a>
                 </li>
