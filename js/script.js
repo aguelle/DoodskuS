@@ -1,15 +1,19 @@
-let sidenav = document.getElementById("mySidenav");
+let navMobile = document.getElementById("nav-mobile");
 let openBtn = document.getElementById("openBtn");
 let closeBtn = document.getElementById("closeBtn");
 
-openBtn.onclick = openNav;
-closeBtn.onclick = closeNav;
-
-/* Set the width of the side navigation to 250px */
+/*Add function to display Nav Mobile*/
 function openNav() {
-  sidenav.classList.add("active");
+  openBtn.addEventListener("click", function () {
+    navMobile.classList.add("active");
+  });
 }
-/* Set the width of the side navigation to 0 */
+
+/* Add function to display off Nav Mobile*/
 function closeNav() {
-  sidenav.classList.remove("active");
+  closeBtn.addEventListener("click", function () {
+    navMobile.classList.remove("active");
+  });
 }
+openNav();
+closeNav();

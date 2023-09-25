@@ -59,7 +59,7 @@ header {
   left: 0;
 }
 /* Sidenav menu */
-.sidenav {
+.nav-mobile {
     height: 100%;
     width: 100%;
     position: fixed;
@@ -72,7 +72,7 @@ header {
   }
 
   /* Sidenav menu links */
-  .sidenav a {
+  .nav-mobile a {
     padding: 36px 8px 8px 8px;
     text-decoration: none;
     font-size: 3rem;
@@ -82,23 +82,23 @@ header {
     transition: 0.3s;
   }
 
-  .sidenav a:hover {
+  .nav-mobile a:hover {
     color: #ffffff;
   }
 
-  .sidenav ul {
+  .nav-mobile ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
   }
 
   /* Active class */
-  .sidenav.active {
+  .nav-mobile.active {
     right: 0;
   }
 
   /* Close btn */
-  .sidenav .close {
+  .nav-mobile .close {
     position: absolute;
     top: 0%;
     right:2%;
