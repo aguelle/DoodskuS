@@ -175,40 +175,7 @@ header {
     display: block;
   }
 
-  /****** footer ******/
-footer {
-  font-family: 'banger';
-  display: flex;
-  justify-content:center;
-  width: 100%;
-  height: 15vh; /* Ajustez la hauteur selon vos besoins */
-  position :fixed;
-  bottom: 0;
-}
 
-footer img{
-  width: 15%;
-  align-items: center;
-}
-
-footer ul{
-  display: flex;
-  align-items: center;
-  justify-content:center;
-}
-footer ul li{
-  display: inline-block;
-  align-items: center;
-  justify-content:center;
-}
-footer ul li a{
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .footer-desktop{
   display: none;
@@ -253,7 +220,8 @@ footer ul li a{
    /* box-shadow: 0px 5px 5px rgb(179, 178, 178); */
    display: flex;
    position :fixed;
-   right: 0;
+   top: 1rem;
+   right: 0;;
   }
 
   nav img{
@@ -282,6 +250,9 @@ nav ul li{
 
 .nav-desktop{
   display: flex;
+  
+  
+
 }
   /* musique page */
 
@@ -293,16 +264,48 @@ nav ul li{
 
    /* Products Merch */
 
-  .products {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      background-color: #564b4b56;
-      box-shadow: 1px 1px 1px rgb(179, 178, 178);
+   /****** products ******/
+   .merch-title{
+    margin-top: 10px;
+  display: none;
+  justify-content: center;
+  position:absolute; 
   }
-  .article .thumbs-list .thumbs-img {
-      width: 100%;
+   .products {
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: #564b4b56;
+    box-shadow: 1px 1px 1px rgb(179, 178, 178);
   }
 
+  .product-itm {
+    box-shadow: 1px 1px 1px 1px rgb(179, 178, 178);
+    display: block;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .product-ttl {
+    padding-top: 5%;
+  }
+  .product-price {
+  }
+
+  .exercice-sandbox {
+    display: flex;
+    gap: 3rem;
+  }
+
+  .product-img {
+    opacity: 1;
+    max-height: 200px;
+  }
+  .product-img:hover{
+    opacity: 0.5;
+  }
 
 /* News Articles */
 .article-title {
@@ -322,7 +325,7 @@ nav ul li{
 
 .article .thumbs-list {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   grid-template-columns: repeat(1, 1fr);
 }
 
@@ -353,6 +356,39 @@ footer ul li{
   padding-left:1rem;
   padding-right: 1rem;
   margin-right: 1rem;
+}
+footer {
+  font-family: 'banger';
+  display: flex;
+  justify-content:center;
+  width: 100%;
+  height: 15vh; /* Ajustez la hauteur selon vos besoins */
+  position :fixed;
+  bottom: 0;
+}
+
+footer img{
+  width: 15%;
+  align-items: center;
+}
+
+footer ul{
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+footer ul li{
+  display: inline-block;
+  align-items: center;
+  justify-content:center;
+}
+footer ul li a{
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .nav-mobile-rs{
   display: none;
