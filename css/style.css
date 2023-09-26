@@ -354,5 +354,7 @@ footer ul li{
   padding-right: 1rem;
   margin-right: 1rem;
 }
-
+.nav-mobile-rs{
+  display: none;
+}
 }
