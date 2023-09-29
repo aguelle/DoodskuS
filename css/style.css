@@ -39,7 +39,7 @@ main {
   margin: 0;
 }
 
-/* body */
+/*** body ***/
 
 body{
   background-image: url(../img/background.jpg);
@@ -62,7 +62,7 @@ header {
 .nav-desk-right{
   display: none;
 }
-/* nav mobile menu */
+/*** nav mobile menu ***/
 .nav-mobile {
     height: 100%;
     width: 100%;
@@ -171,10 +171,10 @@ header {
     opacity: 0.5;
   }
 
+
   .hidden{
     display: block;
   }
-
 
 
 .footer-desktop{
@@ -215,20 +215,22 @@ header {
  }
 
  nav {
-   padding-top: 1rem;
+  background-color: #ffffff;
+  width: 100%;
+  padding-top: 1rem;
    padding-bottom: 1rem;
-   /* box-shadow: 0px 5px 5px rgb(179, 178, 178); */
+   box-shadow: 0px 5px 5px rgb(179, 178, 178);
    display: flex;
    position :fixed;
-   top: 1rem;
-   right: 0;;
+   top: 0;
+   right: 0;
   }
 
   nav img{
     max-height: 5rem;
     position :fixed;
     left: 1rem;
-    top: 1rem;
+    top: 0rem;
 
   }
   nav ul{
@@ -250,22 +252,43 @@ nav ul li{
 
 .nav-desktop{
   display: flex;
-  
-  
-
+  width: 100%;
+  height: 5vh;
 }
-  /* musique page */
+.nav-desk-left{
+  justify-content:flex-start;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+}
+.nav-desk-right{
+  justify-content:flex-end;
+  position: fixed;
+  width: 100%;
+  height: 5vh;
+}
+
+
+  /*** musique page ***/
 
 .music{
-  display: block;
+  background-color: rgba(255, 255, 255, 0.628);
+  padding-top: 2rem;
+padding-bottom: 2rem;
+padding-left: 1rem;
+padding-right: 1rem;
   /* justify-content:space-around; */
-  margin-top: 4rem;
+  margin-top: 10rem;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
+.title-music{
+  margin-top: 1rem;
+  margin-left: 3rem;
+}
+   /*** Products Merch ***/
 
-   /* Products Merch */
-
-   /****** products ******/
-   .merch-title{
+    .merch-title{
     margin-top: 10px;
   display: none;
   justify-content: center;
@@ -307,32 +330,58 @@ nav ul li{
     opacity: 0.5;
   }
 
-/* News Articles */
+/*** News Articles ***/
+
 .article-title {
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
     padding: 1rem;
     font-size: 1.5rem;
   }
 
-  .article .main-img {
-    width: 100%;
+.grid-2{
+  background-color: rgba(255, 255, 255, 0.628);
+  padding: 20px;
+
+}
+  .main-img {
+    margin-top: px;
+    margin-left: 0px;
+    width: auto;
+    height: 25rem;
 }
 
 .article .description {
   font-size: 1rem;
+  width:400px;
+  height: 400px;
 }
 
-.article .thumbs-list {
+ .thumbs-list {
   display: grid;
   gap: 3rem;
   grid-template-columns: repeat(1, 1fr);
 }
+.thumbs-img{
+  padding: 1px;
+  background-color: rgba(255, 255, 255, 0.628);
+width: 100px;
+height : 100px;
+}
+.gallery{
+  margin:150px;
+}
 
-/* footer  */
+
+/*** footer  ***/
+
+
 .footer-desktop{
   display: flex;
-width: 100%;
+  margin: 0;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  box-shadow: 0px -1px 10px rgb(0, 0, 0);
 }
 .logo-rs{
   width: 2rem;
@@ -340,44 +389,39 @@ width: 100%;
 .footer-left{
   justify-content:flex-start;
   width: 100%;
-  height: 15vh;
-  position :fixed;
+  height: 5vh;
+  
   color: rgb(255, 255, 255);
 }
 .footer-right{
   justify-content:flex-end;
   width: 100%;
-  height: 15vh;
-  position :fixed;
+  height: 5vh;
   color: rgb(255, 255, 255);
 }
-footer ul li{
 
-  padding-left:1rem;
-  padding-right: 1rem;
-  margin-right: 1rem;
-}
 footer {
+  left: 0;
   font-family: 'banger';
   display: flex;
   justify-content:center;
   width: 100%;
-  height: 15vh; /* Ajustez la hauteur selon vos besoins */
+  height: 5rem; /* Ajustez la hauteur selon vos besoins */
   position :fixed;
   bottom: 0;
 }
 
-footer img{
-  width: 15%;
-  align-items: center;
-}
 
 footer ul{
   display: flex;
   align-items: center;
   justify-content:center;
+  margin-top:1rem;
 }
 footer ul li{
+  padding-left:1rem;
+  padding-right: 1rem;
+  margin-right: 1rem;
   display: inline-block;
   align-items: center;
   justify-content:center;
@@ -390,7 +434,10 @@ footer ul li a{
   align-items: center;
   justify-content: center;
 }
+
 .nav-mobile-rs{
   display: none;
 }
+
+
 }
