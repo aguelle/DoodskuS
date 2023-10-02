@@ -77,7 +77,7 @@ header {
 
   /* nav mobile links */
   .nav-mobile a {
-    padding: 30px 8px 8px 8px;
+    padding: 15px 19px 19px 19px;
     text-decoration: none;
     font-size: 2.5rem;
     color: #ffffffa2;
@@ -138,6 +138,14 @@ header {
   }
 
   /*** news ***/
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* background-color: #564b4b56; */
+  /* box-shadow: 1px 1px 1px rgb(179, 178, 178); */
+  margin:10px;
+
+}
 
   .btn-news{
 justify-content: flex-end;
@@ -172,7 +180,7 @@ justify-content: flex-end;
 }
 
  .thumbs-list {
-  display: grid;
+  display: none;
   gap: 3rem;
   grid-template-columns: repeat(1, 1fr);
 }
@@ -181,10 +189,6 @@ justify-content: flex-end;
   background-color: rgba(255, 255, 255, 0.628);
 width: 100px;
 height : 100px;
-}
-
-.gallery{
-  margin:10px;
 }
 
   /****** products ******/
@@ -381,6 +385,13 @@ padding-right: 1rem;
   }
 
 /*** News Articles ***/
+
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  /* box-shadow: 1px 1px 1px rgb(179, 178, 178); */
+  margin:10px;
+}
 
 .article-title {
     text-align: left;

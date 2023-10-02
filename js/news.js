@@ -24,3 +24,19 @@ function showImage(imageData) {
   document.querySelector("#article-description").innerText =
     imageData.description;
 }
+
+const btnUp = document.querySelector('.btn-up');
+const btnDown = document.querySelector('.btn-down');
+
+btnUp.addEventListener('click', function(){
+  console.log("btnNews")})
+
+btnDown.addEventListener('click', function(){
+  console.log("btnDown")})
+
+  // showImage({
+    // src: "article-img".src,
+    // title: "article-title".dataset.title,
+    // description: "article-descritption".dataset.description,
+  // });
+// })
