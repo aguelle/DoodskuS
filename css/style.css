@@ -183,7 +183,7 @@ align-items: center;
   grid-template-columns: repeat(1, 1fr);
   /* background-color: #564b4b56; */
   /* box-shadow: 1px 1px 1px rgb(179, 178, 178); */
-  margin:25rem;
+  margin:1rem;
 
 }
 
@@ -203,14 +203,12 @@ justify-content: flex-end;
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.628);
-  padding: 20px;
+  padding: 1rem;
 
 }
   .main-img {
-    margin-top: px;
-    margin-left: 0px;
     width: auto;
-    height: 25rem;
+    height: 10rem;
 }
 
 .article .description {
@@ -220,8 +218,7 @@ justify-content: flex-end;
 }
 
  .thumbs-list {
-  display: none;
-  gap: 3rem;
+  gap: 1rem;
   grid-template-columns: repeat(1, 1fr);
 }
 .thumbs-img{
@@ -271,11 +268,11 @@ height : 100px;
   }
   .product-price {
   }
-/* 
+
   .exercice-sandbox {
     display: flex;
     gap: 3rem;
-  } */
+  }
 
   .product-img {
     opacity: 1;
