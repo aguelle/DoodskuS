@@ -161,7 +161,22 @@ align-items: center;
     justify-content: space-around;
 
   }
+  /*** musique page ***/
 
+  .music{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.628);
+    box-shadow: 5px 2px 4px rgba(0, 0, 0, 0.385);
+    margin-top: 1rem;
+    /* justify-content:space-around; */
+
+  }
+  .title-music{
+    margin-top: 1rem;
+  }
   /*** news ***/
 .gallery{
   display: grid;
@@ -376,11 +391,12 @@ nav ul li{
   /*** musique page ***/
 
 .music{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.628);
-  padding-top: 2rem;
-padding-bottom: 2rem;
-padding-left: 1rem;
-padding-right: 1rem;
+  padding: 2rem;
   /* justify-content:space-around; */
   margin-top: 10rem;
   margin-left: 10rem;
@@ -388,7 +404,6 @@ padding-right: 1rem;
 }
 .title-music{
   margin-top: 1rem;
-  margin-left: 3rem;
 }
    /*** Products Merch ***/
 
