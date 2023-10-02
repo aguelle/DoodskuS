@@ -20,13 +20,10 @@ document.querySelectorAll(".thumbs-img").forEach((img) => {
 
 function showImage(imageData) {
   document.getElementById("article-img").src = imageData.src;
-  document.querySelector("#aritcle-title").innerText = imageData.title;
+  document.querySelector("#article-title").innerText = imageData.title;
   document.querySelector("#article-description").innerText =
     imageData.description;
 }
-
-
-
 
 // add function to navigate with button in the news page
 // const btnUp = document.querySelector('.btn-up');
@@ -38,9 +35,9 @@ function showImage(imageData) {
 // btnDown.addEventListener('click', function(){
 //   console.log("btnDown")})
 
-  // showImage({
-    // src: "article-img".src,
-    // title: "article-title".dataset.title,
-    // description: "article-descritption".dataset.description,
-  // });
+// showImage({
+// src: "article-img".src,
+// title: "article-title".dataset.title,
+// description: "article-descritption".dataset.description,
+// });
 // })

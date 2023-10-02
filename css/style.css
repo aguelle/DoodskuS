@@ -269,7 +269,7 @@ height : 100px;
   .product-price {
   }
 
-  .exercice-sandbox {
+  .gallery-articles {
     display: flex;
     gap: 3rem;
   }
@@ -431,7 +431,7 @@ nav ul li{
   .product-price {
   }
 
-  .exercice-sandbox {
+  .gallery-articles {
     display: flex;
     gap: 1rem;
   }

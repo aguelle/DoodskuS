@@ -1,5 +1,4 @@
 // 1.recover data json
-
 async function fetchMerchData(url) {
   try {
     const response = await fetch(url);
@@ -24,19 +23,19 @@ function displayProducts(products) {
 };
 
 function createProductElement(product) {
-  // Copy template
+  // Copy template product element
   const productElement = document.importNode(
     document.getElementById("product-template").content,
     true
   );
 
-  // Put the name
+  // Put the name of product
   productElement.querySelector(".product-ttl").textContent = product.name;
 
-  // Put the price
+  // Put the price of product
   productElement.querySelector(".product-price").textContent = product.price;
 
-  // Change image
+  // Change image of product
   const img = productElement.querySelector(".product-img");
   img.src = product.image;
   img.alt = product.name;
