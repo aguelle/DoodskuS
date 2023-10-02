@@ -62,6 +62,19 @@ header {
 .nav-desk-right{
   display: none;
 }
+.row{
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+align-items: center;
+
+}
+
+.cta{
+  height: 30rem;
+  box-shadow: 10px 8px 9px rgba(179, 178, 178, 0.518);
+
+}
 /*** nav mobile menu ***/
 .nav-mobile {
     height: 100%;
@@ -117,11 +130,11 @@ header {
 
   .burger.scroll{
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.1s;
   }
 .logo-nav.scroll{
   opacity: 0;
-  transition: 0.2s;
+  transition: 0.1s;
 }
   .burger {
     position:fixed;
@@ -278,6 +291,11 @@ height : 100px;
 
   body{
   object-fit: cover;
+  }
+
+  .row{
+    margin-top: 10rem;
+
   }
 
 .flex{
