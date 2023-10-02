@@ -2,7 +2,7 @@
     {
        "id":1,
        "name":"Cap",
-       "category":"clothes",
+       "categories":"clothes",
        "specificity": "",
        "price" : "15€",
        "image": "img/Merch/cap.png"
@@ -10,7 +10,7 @@
     {
         "id":2,
         "name":"Hat",
-        "category":"clothes",
+        "categories":"clothes",
         "specificity": "",
         "price" : "15€",
         "image":"img/Merch/hat.png"
@@ -18,7 +18,7 @@
     {
         "id":3,
         "name":"Mug",
-        "category":"accessories",
+        "categories":"accessories",
         "specificity": "",
         "price" : "12€",
         "image":"img/Merch/mug.png"
@@ -26,7 +26,7 @@
     {
         "id":4,
         "name":"Poster Promo",
-        "category":"accessories",
+        "categories":"accessories",
         "specificity": "",
         "price" : "10€",
         "image":"img/Merch/poster promo.jpg"
@@ -34,7 +34,7 @@
     {
         "id":5,
         "name":"Rum",
-        "category":"alcool",
+        "categories":"alcool",
         "specificity": "18 years old",
         "price" : "50€",
         "image":"img/Merch/rum.png"
@@ -42,7 +42,7 @@
     {
         "id":6,
         "name":"Sweater Basic",
-        "category":"clothes",
+        "categories":"clothes",
         "specificity": "basic",
         "price" : "40€",
         "image":"img/Merch/sweater basic.png"
@@ -50,7 +50,7 @@
     {
         "id":7,
         "name":"Sweater Deluxe",
-        "category":"clothes",
+        "categories":"clothes",
         "specificity": "deluxe",
         "price" : "50€",
         "image":"img/Merch/sweater deluxe.png"
@@ -58,7 +58,7 @@
     {
         "id":8,
         "name":"Sweater Grey Cross",
-        "category":"clothes",
+        "categories":"clothes",
         "specificity": "",
         "price" : "45€",
         "image":"img/Merch/sweater grey cross.png"
@@ -66,7 +66,7 @@
     {
         "id":9,
         "name":"Sweater Red Cross",
-        "category":"clothes",
+        "categories":"clothes",
         "specificity": "",
         "price" : "45€",
         "image":"img/Merch/sweater red cross.png"
@@ -74,7 +74,7 @@
     {
         "id":10,
         "name":"Tshirt Man",
-        "category":"clothes",
+        "categories":"clothes",
         "specificity": "man",
         "price" : "25€",
         "image":"img/Merch/tshirt men.png"
@@ -82,7 +82,7 @@
     {
         "id":11,
         "name":"Tshirt Women",
-        "category":"clothes",
+        "categories":"clothes",
         "specificity": "women",
         "price" : "25€",
         "image":"img/Merch/tshirt women.png"
@@ -90,7 +90,7 @@
     {
         "id":12,
         "name":"Vynil",
-        "category":"Music",
+        "categories":"Music",
         "specificity": "Album",
         "price" : "25€",
         "image":"img/Merch/Vinyl Record2.png"
@@ -98,7 +98,7 @@
     {
         "id":13,
         "name":"Vynil - Collector",
-        "category":"Music",
+        "categories":"Music",
         "specificity": "Album Collector",
         "price" : "25€",
         "image":"img/Merch/Vinyl Record3.png"
@@ -106,7 +106,7 @@
     {
         "id":14,
         "name":"Vynil",
-        "category":"Music",
+        "categories":"Music",
         "specificity": "Single",
         "price" : "10€",
         "image":"img/Merch/Vinyl Record single.png"

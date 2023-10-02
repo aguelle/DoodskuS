@@ -1,4 +1,4 @@
-// 1.récupérer les données json
+// 1.recover data json
 
 async function fetchMerchData(url) {
   try {
@@ -10,6 +10,9 @@ async function fetchMerchData(url) {
 }
 
 fetchMerchData("datas/merch.json").then(displayProducts);
+;
+
+let products = [];
 
 // 2.display on the page
 
@@ -18,13 +21,7 @@ function displayProducts(products) {
   for (const product of products) {
     productsContainer.appendChild(createProductElement(product));
   }
-}
-
-function displayProducts(products) {
-  document
-    .getElementById("products-container")
-    .append(...products.map(createProductElement));
-}
+};
 
 function createProductElement(product) {
   // Copy template
@@ -46,3 +43,41 @@ function createProductElement(product) {
 
   return productElement;
 }
+
+// Add function to get list of category merch .
+
+// function getCategories() {
+//   let listCategories = [];
+//   products.forEach(product => {
+//       product.categories.forEach(category => {
+//           if (!listCategories.includes(category)) listCategories.push(category);
+//       });
+//   });
+//   return listCategories;
+// };
+
+
+// Add function to display categories of merch
+// function displayCategoriesProducts(categories) {
+//   for (const category of categories) {
+//       const newLi = document.createElement('li');
+//       const newBtn = document.createElement('button');
+//       newBtn.classList.add('nav-btn');
+//       newBtn.textContent = category;
+//       newLi.appendChild(newBtn);
+//       document.querySelector('#nav-bar-list').appendChild(newLi);
+//   }
+// };
+
+// function createCategoryElement(category, nb) {
+//   // Copy template
+//   const categoryElement = document.importNode(document.getElementById('catgory-template').content, true);
+  
+//   // Put the name
+//   categoryElement.querySelector('.nav-btn').textContent = `${category} (${nb})`;
+  
+//   // Add style name attribute
+// categoryElement.querySelector('.nav-btn').dataset.categoryName = category;
+  
+//   return categoryElement;
+// }

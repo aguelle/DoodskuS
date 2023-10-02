@@ -72,10 +72,11 @@ header {
     right: -100%;
     background-color: #000000e2;
     padding-top: 60px;
-    transition: right 0.5s ease;
+    transition: right 0.5s ease-in-out;
   }
 
   /* nav mobile links */
+
   .nav-mobile a {
     padding: 15px 19px 19px 19px;
     text-decoration: none;
@@ -99,6 +100,7 @@ header {
   /* Active class */
   .nav-mobile.active {
     right: 0;
+
   }
 
   /* Close btn */
@@ -108,6 +110,7 @@ header {
     right:1rem;
     font-size: 3rem;
     margin: 15px 0;
+
   }
 
   /* burger */
@@ -143,7 +146,7 @@ header {
   grid-template-columns: repeat(1, 1fr);
   /* background-color: #564b4b56; */
   /* box-shadow: 1px 1px 1px rgb(179, 178, 178); */
-  margin:10px;
+  margin:25rem;
 
 }
 
@@ -192,18 +195,38 @@ height : 100px;
 }
 
   /****** products ******/
+
+  /* .nav-bar {
+    margin-top: 200px;
+    background-color: black;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+} */
+/* .nav-btn {
+  padding: 10px;
+  margin: 5px;
+  border: solid 1px black;
+} */
   .products {
     display: grid;
+    margin: 1rem;
+    /* padding: 1rem; */
     grid-template-columns: repeat(1, 1fr);
-    background-color: #564b4b56;
-    box-shadow: 1px 1px 1px rgb(179, 178, 178);
+    /* box-shadow: 1px 1px 1px rgb(179, 178, 178); */
   }
-
+  
   .product-itm {
     box-shadow: 1px 1px 1px 1px rgb(179, 178, 178);
     display: block;
+    margin: 0.1rem;
+    background-color: #ffffff;
     justify-items: center;
     text-align: center;
+    /* border: 0.1rem solid #000000; */
+  
   }
 
   .product-ttl {
@@ -211,15 +234,15 @@ height : 100px;
   }
   .product-price {
   }
-
+/* 
   .exercice-sandbox {
     display: flex;
     gap: 3rem;
-  }
+  } */
 
   .product-img {
     opacity: 1;
-    max-height: 200px;
+    max-height: 150px;
   }
   .product-img:hover{
     opacity: 0.5;
@@ -343,23 +366,21 @@ padding-right: 1rem;
    /*** Products Merch ***/
 
     .merch-title{
-    margin-top: 10px;
-  display: none;
+    margin-top: 7rem;
+  margin-left: 3rem;
   justify-content: center;
-  position:absolute; 
+  /* position:absolute;  */
   }
+  
    .products {
-    margin-top: 150px;
-    margin-left: 50px;
-    margin-right: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color: #564b4b56;
-    box-shadow: 1px 1px 1px rgb(179, 178, 178);
+    /* background-color: #564b4b56; */
+    /* box-shadow: 1px 1px 1px rgb(179, 178, 178); */
   }
 
   .product-itm {
-    box-shadow: 1px 1px 1px 1px rgb(179, 178, 178);
+    /* box-shadow: 1px 1px 1px 1px rgb(179, 178, 178); */
     display: block;
     justify-items: center;
     text-align: center;
@@ -373,7 +394,7 @@ padding-right: 1rem;
 
   .exercice-sandbox {
     display: flex;
-    gap: 3rem;
+    gap: 1rem;
   }
 
   .product-img {
@@ -390,7 +411,7 @@ padding-right: 1rem;
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   /* box-shadow: 1px 1px 1px rgb(179, 178, 178); */
-  margin:10px;
+  /* margin:10px; */
 }
 
 .article-title {

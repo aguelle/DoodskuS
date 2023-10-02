@@ -25,14 +25,18 @@ function showImage(imageData) {
     imageData.description;
 }
 
-const btnUp = document.querySelector('.btn-up');
-const btnDown = document.querySelector('.btn-down');
 
-btnUp.addEventListener('click', function(){
-  console.log("btnNews")})
 
-btnDown.addEventListener('click', function(){
-  console.log("btnDown")})
+
+// add function to navigate with button in the news page
+// const btnUp = document.querySelector('.btn-up');
+// const btnDown = document.querySelector('.btn-down');
+
+// btnUp.addEventListener('click', function(){
+//   console.log("btnNews")})
+
+// btnDown.addEventListener('click', function(){
+//   console.log("btnDown")})
 
   // showImage({
     // src: "article-img".src,
