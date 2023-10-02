@@ -114,6 +114,15 @@ header {
   }
 
   /* burger */
+
+  .burger.scroll{
+    opacity: 0;
+    transition: 0.2s;
+  }
+.logo-nav.scroll{
+  opacity: 0;
+  transition: 0.2s;
+}
   .burger {
     position:fixed;
     top: 2rem;
