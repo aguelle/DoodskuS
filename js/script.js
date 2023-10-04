@@ -22,15 +22,8 @@ closeNav();
 function displayNavMobileOnScroll(){
 window.addEventListener('scroll',()=>{
   if(window.scrollY>50){
-  openBtn.classList.add('scroll')
+  openBtn.classList.add('scroll');logoNav.classList.add('scroll')
   }
-  else {openBtn.classList.remove('scroll')}
-});
-window.addEventListener('scroll',()=>{
-  if(window.scrollY>50){
-  logoNav.classList.add('scroll')
-  }
-  else{logoNav.classList.remove('scroll')}
-});
-};
+  else {openBtn.classList.remove('scroll');logoNav.classList.remove('scroll')}
+});}
 displayNavMobileOnScroll();
