@@ -46,10 +46,8 @@ $currentPage = getCurrentPageData($pages);
 
             <!-- nav desktop -->
             <div class="nav-desktop hidden">
-                <ul class="nav-desk-left flex">
-                    <li><a href="index.php"> <img id="logo-nav" src="img/Logos/logo3Resize.png" class="logo-nav"></a>
-                    </li>
-                </ul>
+                
+                     <img id="logo-nav" src="img/Logos/logo3Resize.png" class="logo-nav ">
 
                 <?= generateDeskHtmlNav($pages) ?>
 

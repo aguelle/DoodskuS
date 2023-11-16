@@ -408,3 +408,7 @@ function generateStyleSheetLinks(array $styleSheetFiles): string
 {
     return implode('', array_map(fn ($cssFile) => "<link rel=\"stylesheet\" href=\"{$cssFile}\">", $styleSheetFiles));
 }
+
+function generateToken(){
+    $_SESSION['token'] = md5(uniqid(mt_rand(), true));
+}
