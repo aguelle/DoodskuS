@@ -12,7 +12,7 @@
             </a>
         </ul>
         <ul class="footer-right">
-            <li><a href="#">NEWSLETTER</a></li>
+            <li><a href="newsletter.php">NEWSLETTER</a></li>
             <li><a href="#">MENTIONS LEGALES</a></li>
         </ul>
     </div>

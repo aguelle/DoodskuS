@@ -18,7 +18,7 @@ if (!isset($_SERVER['HTTP_REFERER']) || !str_contains($_SERVER['HTTP_REFERER'], 
 
 // var_dump($_SERVER['HTTP_REFERER']);
 // exit;
-//Add a new task
+//subscribe to a newsletter
 if (isset($_POST['action']) && $_POST['action'] === 'add' && isset($_POST['name_task'])) {
 
     $nameTask = strip_tags($_POST['name_task']);
@@ -35,40 +35,42 @@ if (isset($_POST['action']) && $_POST['action'] === 'add' && isset($_POST['name_
     }
 }
 
-//Update state task
-else if ($_GET['action'] === 'state' && isset($_GET['id'])) {
 
-    // $nameTask = strip_tags($_POST['name_task']);
-    // if (strlen($nameTask) > 3 && strlen($nameTask) < 50) {
-    // $id = intval($_GET['id']);
-    $query = $dbCo->prepare("UPDATE task SET state_task = 1 WHERE id_task = :id;");
-    $isQueryOk = $query->execute([
-        'id' => intval(strip_tags($_GET['id']))
-    ]);
-    if ($isQueryOk && $query->rowcount() === 1) {
-        $_SESSION['notif'] = 'updateStateTask';
-    } else {
-        $_SESSION['error'] = 'addTaskError';
-    }
-}
 
-//Update task
-else if ($_GET['action'] === 'update' && isset($_GET['id'])) {
+// //Update state task
+// else if ($_GET['action'] === 'state' && isset($_GET['id'])) {
 
-    // $nameTask = strip_tags($_POST['name_task']);
-    // if (strlen($nameTask) > 3 && strlen($nameTask) < 50) {
-    // $id = intval($_GET['id']);
-    $query = $dbCo->prepare("UPDATE task SET name_task = ':name_task' WHERE id_task = :id;");
-    $isQueryOk = $query->execute([
-        'id' => intval(strip_tags($_GET['id'])),
-        'name_task' => strip_tags($_POST['name_task'])
-    ]);
-    if ($isQueryOk && $query->rowcount() === 1) {
-        $_SESSION['notif'] = 'updateStateTask';
-    } else {
-        $_SESSION['error'] = 'addTaskError';
-    }
-}
+//     // $nameTask = strip_tags($_POST['name_task']);
+//     // if (strlen($nameTask) > 3 && strlen($nameTask) < 50) {
+//     // $id = intval($_GET['id']);
+//     $query = $dbCo->prepare("UPDATE task SET state_task = 1 WHERE id_task = :id;");
+//     $isQueryOk = $query->execute([
+//         'id' => intval(strip_tags($_GET['id']))
+//     ]);
+//     if ($isQueryOk && $query->rowcount() === 1) {
+//         $_SESSION['notif'] = 'updateStateTask';
+//     } else {
+//         $_SESSION['error'] = 'addTaskError';
+//     }
+// }
+
+// //Update task
+// else if ($_GET['action'] === 'update' && isset($_GET['id'])) {
+
+//     // $nameTask = strip_tags($_POST['name_task']);
+//     // if (strlen($nameTask) > 3 && strlen($nameTask) < 50) {
+//     // $id = intval($_GET['id']);
+//     $query = $dbCo->prepare("UPDATE task SET name_task = ':name_task' WHERE id_task = :id;");
+//     $isQueryOk = $query->execute([
+//         'id' => intval(strip_tags($_GET['id'])),
+//         'name_task' => strip_tags($_POST['name_task'])
+//     ]);
+//     if ($isQueryOk && $query->rowcount() === 1) {
+//         $_SESSION['notif'] = 'updateStateTask';
+//     } else {
+//         $_SESSION['error'] = 'addTaskError';
+//     }
+// }
 
 
 

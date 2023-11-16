@@ -10,21 +10,16 @@ include_once  'includes/_head.php';
 
 </header>
 
+<main>
 
 
-    <!--------------------------------------------------------------------------------------------------------
----------------------------------------------------MAIN---------------------------------------------------
----------------------------------------------------------------------------------------------------------->
+    <form action="action.php" method="POST">
+        <label class="label" for="name">Newsletter</label>
+        <input class="new-task" type="text" name="name_task" id="newtask">
+        <input class="btn-new-task" type="submit" value="👉🏻inscris-toi à la newsletter" title="Ajouter une nouvelle tâche">
+        <input type="hidden" name="action" value="add">
+        <input type="hidden" name="token" value="<?= $_SESSION['token'] ?>">
+    </form>
+</main>
 
-    <main class="row">
-        <h2>
-            On Tour
-        </h2>
-    </main>
-
-
-
-    <!--------------------------------------------------------------------------------------------------------
----------------------------------------------------FOOTER-------------------------------------------------
---------------------------------------------------------------------------------------------------------->
-<?=include_once "./includes/_footer.php"?>
+<?= include_once "./includes/_footer.php" ?>
