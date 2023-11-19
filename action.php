@@ -2,35 +2,37 @@
 session_start();
 require_once "./vendor/autoload.php";
 require_once './includes/_dbCo.php';
-// require_once './includes/_notif.php';
+require_once './includes/_notif.php';
 // var_dump($_SESSION);
 // exit;
 
 if (!isset($_SESSION['token']) || !isset($_POST['token']) || $_SESSION['token'] != $_POST['token']) {
     header('Location: index.php');
+    var_dump($_SESSION);
     exit;
 }
 
-if (!isset($_SERVER['HTTP_REFERER']) || !str_contains($_SERVER['HTTP_REFERER'], 'localhost/todolistfromhell')) {
+
+if (!isset($_SERVER['HTTP_REFERER']) || !str_contains($_SERVER['HTTP_REFERER'], 'localhost/Site-Doodskus')) {
     header('Location: index.php');
+    var_dump($_SESSION);
     exit;
 }
 
-// var_dump($_SERVER['HTTP_REFERER']);
-// exit;
-//subscribe to a newsletter
-if (isset($_POST['action']) && $_POST['action'] === 'add' && isset($_POST['name_task'])) {
 
-    $nameTask = strip_tags($_POST['name_task']);
-    if (strlen($nameTask) > 3 && strlen($nameTask) < 50) {
-        $query = $dbCo->prepare(" INSERT INTO task (name_task) VALUES (:name_task)");
+
+if (isset($_POST['action']) && $_POST['action'] === 'add' && isset($_POST['new_sub'])) {
+
+    $newsub = strip_tags($_POST['new_sub']);
+    if (strlen($newsub) > 3 && strlen($newsub) < 50) {
+        $query = $dbCo->prepare(" INSERT INTO customer (email) VALUES (:new_sub)");
         $isQueryOk = $query->execute([
-            'name_task' => $nameTask
+            'new_sub' => $newsub
         ]);
         if ($isQueryOk && $query->rowcount() === 1) {
-            $_SESSION['notif'] = 'addTask';
+            $_SESSION['notif'] = 'sub_ok';
         } else {
-            $_SESSION['error'] = 'addTaskError';
+            $_SESSION['error'] = 'sub_error';
         }
     }
 }

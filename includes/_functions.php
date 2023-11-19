@@ -412,3 +412,38 @@ function generateStyleSheetLinks(array $styleSheetFiles): string
 function generateToken(){
     $_SESSION['token'] = md5(uniqid(mt_rand(), true));
 }
+
+function generateToken2()
+{
+    if (!isset($_SESSION['token']) || time() > $_SESSION['tokenExpire']) {
+        $_SESSION['token'] = md5(uniqid(mt_rand(), true));
+        $_SESSION['tokenExpire'] = time() + 15 * 60;
+    }
+}
+
+function throwAsyncError(string $message): void
+{
+    echo json_encode([
+        'result' => false,
+        'error' => $message
+    ]);
+    exit;
+}
+function getNotifHtml(): string
+{
+    $html = '<ul id="notification-wrapper" class="notif-wrapper">';
+
+    if (isset($_SESSION['notif'])) {
+        $html .= '<div class="notification">😀 ' . $_SESSION['notif'] . '</div>';
+        unset($_SESSION['notif']);
+    }
+
+    if (isset($_SESSION['error'])) {
+        $html .= '<div class="error">😨 ' . $_SESSION['error'] . '</div>';
+        unset($_SESSION['error']);
+    }
+
+    $html .= '</ul>';
+
+    return $html;
+}

@@ -9,5 +9,5 @@ async function ontourdata(url){
     };
     
     fetchOnTourData("datas/ontour.json").then(displayOnTour);
-};
+;
 

@@ -13,7 +13,7 @@ $currentPage = getCurrentPageData($pages);
     <title><?= $currentPage['title'] ?></title>
 </head>
 
-<body class="dark-template">
+<body>
     <header>
         <!-- nav mobile -->
         <nav>
@@ -46,9 +46,8 @@ $currentPage = getCurrentPageData($pages);
 
             <!-- nav desktop -->
             <div class="nav-desktop hidden">
-                
-                     <img id="logo-nav" src="img/Logos/logo3Resize.png" class="logo-nav ">
 
+                <img id="logo-nav" src="img/Logos/logo3Resize.png" class="logo-nav">
                 <?= generateDeskHtmlNav($pages) ?>
 
             </div>

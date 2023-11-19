@@ -6,7 +6,6 @@ include_once  'includes/_head.php';
 ?>
 <!-- nav mobile -->
 
-</header>
 
 
 

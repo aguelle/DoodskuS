@@ -8,7 +8,6 @@ include_once  'includes/_head.php';
 
 
 
-</header>
 
 
 
