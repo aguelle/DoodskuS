@@ -360,26 +360,26 @@ header {
 }
 
 .notif-wrapper {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin: 1rem;
+  /* position: fixed;
+  top: 5rem;
+  left: 5rem; */
+  /* margin: 10rem; */
+  /* width: 100%; */
 }
 
+
 .notification, .error {
-  border-radius: 1rem;
-  margin: 10rem;
-  padding: .5rem;
+  background-color: black;
+  color: white;
+  border-radius: 0.2rem;
+  padding: 1rem;
+  margin-top: 1rem;
 }
-.notification {
-  margin: 10rem;
-  background-color: var(--white);
-  color: var(--black);
-}
+/* }
 .error {
-  background-color: var(--bg-error);
-  color: var(--white);
-}
+  .notification {
+  margin-top: 1rem;
+} */
 
 .hidden {
   display: block;

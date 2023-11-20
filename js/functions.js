@@ -18,7 +18,7 @@ export function displayError(errorMessage) {
     notif.textContent = errorMessage;
 
     document.getElementById('notification-wrapper').appendChild(notif);
-    setTimeout(() => notif.remove(), 2000);
+    setTimeout(() => notif.remove(), 10000);
 }
 
 /**
@@ -33,7 +33,7 @@ export function displayNotification(notification) {
     notif.textContent = notification;
 
     document.getElementById('notification-wrapper').appendChild(notif);
-    setTimeout(() => notif.remove(), 4000);
+    setTimeout(() => notif.remove(), 10000);
 }
 
 /**

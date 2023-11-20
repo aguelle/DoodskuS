@@ -44,7 +44,7 @@ document.getElementById("new_sub").addEventListener("submit", function (event) {
   };
 
   if (data.text.length < 1) {
-    utils.displayError("Merci de saisir une adresse email valide.");
+    utils.displayError("❌Merci de saisir une adresse email valide.❌");
     return;
   }
   if (data.token.length < 1) {
@@ -58,7 +58,7 @@ document.getElementById("new_sub").addEventListener("submit", function (event) {
       utils.displayError(responseApi.error);
       return;
     }
-    utils.displayError("adresse email enregistrée.");
+    utils.displayError("👍🏻adresse email enregistrée.🤘🏻");
 
   });
 });
