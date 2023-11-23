@@ -36,17 +36,17 @@ $pages = [
 
 
 $pagesFooter = [
-        [
-            'name' => 'Newsletter',
-            'file' => 'newsletter.php',
-            'title' => 'DoodskuS - NewsletetteR',
-            'styleSheet' => ['css/style.css']
-        ],
-        [
-            'name' => 'Mentions Légales',
-            'file' => 'mentionslegales.php',
-            'title' => 'DoodskuS - Mentions Legales',
-            'styleSheet' => ['css/style.css']
-        ],
+    [
+        'name' => 'Newsletter',
+        'file' => 'newsletter.php',
+        'title' => 'DoodskuS - NewsletetteR',
+        'styleSheet' => ['css/style.css']
+    ],
+    [
+        'name' => 'Mentions Légales',
+        'file' => 'mentionslegales.php',
+        'title' => 'DoodskuS - Mentions Legales',
+        'styleSheet' => ['css/style.css']
+    ],
 
-    ];
+];

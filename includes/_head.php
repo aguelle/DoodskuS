@@ -1,5 +1,7 @@
 <?php
 $currentPage = getCurrentPageData($pages);
+generateToken();
+session_start();
 
 ?>
 <!DOCTYPE html>
