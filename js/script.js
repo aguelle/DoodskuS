@@ -54,7 +54,7 @@ document.getElementById("new_sub").addEventListener("submit", function (event) {
   }
   
   // c. Effectuer une requête HTTP asynchrone en JavaScript (AJAX)
-  utils.fetchApi("POST", data).then((responseApi) => {
+  utils.fetchApi("POST", data).then(responseApi => {
     // An error occurs, dispay error message
     if (!responseApi.result) {
       utils.displayError(responseApi.error);
