@@ -33,10 +33,11 @@ function handleNavMobileOnScroll() {
 initActionNavBar();
 initActionWindow();
 
-//Add subscription
+//Add subscription (a. Déclencher l’action côté client)
 document.getElementById("new_sub").addEventListener("submit", function (event) {
   event.preventDefault();
-  // Check and validate data
+  // Check and validate data 
+  // b. Collecter et valider les données
   const data = {
     action: "add",
     token: utils.getToken(),
@@ -52,6 +53,7 @@ document.getElementById("new_sub").addEventListener("submit", function (event) {
     return;
   }
   
+  // c. Effectuer une requête HTTP asynchrone en JavaScript (AJAX)
   utils.fetchApi("POST", data).then((responseApi) => {
     // An error occurs, dispay error message
     if (!responseApi.result) {
