@@ -2,7 +2,7 @@
 
 include_once 'includes/_config.php';
 require_once 'includes/_functions.php';
-include_once  'includes/_headadmin.php';
+// include_once  'includes/_headadmin.php';
 generateToken();
 
 ?>
@@ -13,6 +13,11 @@ generateToken();
         <h2>Add Merch in BDD</h2>
         <label class="label-form" for="name">name</label>
         <input class="form-text" type="text" name="name_product" id="name" require placeholder="name of product">
+        <label class="label-form" for="price">price</label>
+        <input class="form-text" type="text" name="price_product" id="price" require placeholder="price of product">
+        <!-- <label class="label-form" for="picture">picture</label>
+        <input class="form-text" type="" name="picture" id="picture" require placeholder="picture of product"> -->
+
         <!-- <label class="label-form" for="categorie">what's cat?</label>
         <select class="form-text" name="categorie" id="categorie">
             <option value="">Please choose a product category</option>
@@ -33,4 +38,5 @@ generateToken();
 </main>
 <script type="module" src="./js/scriptadmin.js"></script>
 
-<?= include_once "./includes/_footer.php" ?>
+<!-- 
+<?= include_once "./includes/_footer.php" ?> -->

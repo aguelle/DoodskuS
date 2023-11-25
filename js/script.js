@@ -64,3 +64,38 @@ document.getElementById("new_sub").addEventListener("submit", function (event) {
 
   });
 });
+
+//Add product (a. Déclencher l’action côté client)
+document.getElementById("merch").addEventListener("submit", function (event) {
+  console.log('coucou');
+  exit;
+
+  event.preventDefault();
+  // Check and validate data 
+  // b. Collecter et valider les données
+  const data = {
+    action: "add",
+    token: utils.getToken(),
+    text: this.querySelector('input[name="new_sub"]').value,
+  };
+
+  if (data.text.length < 1) {
+    utils.displayError("❌Merci de saisir une adresse email valide.❌");
+    return;
+  }
+  if (data.token.length < 1) {
+    utils.displayError("Sécu !? HELP !!!!");
+    return;
+  }
+  
+  // c. Effectuer une requête HTTP asynchrone en JavaScript (AJAX)
+  utils.fetchApi("POST", data).then(responseApi => {
+    // An error occurs, dispay error message
+    if (!responseApi.result) {
+      utils.displayError(responseApi.error);
+      return;
+    }
+    utils.displayError("👍🏻adresse email enregistrée.🤘🏻");
+
+  });
+});
