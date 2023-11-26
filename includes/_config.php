@@ -32,6 +32,7 @@ $pages = [
         'title' => 'DoodskuS - MercH',
         'styleSheet' => ['css/style.css']
     ],
+
 ];
 
 

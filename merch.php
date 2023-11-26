@@ -20,34 +20,34 @@ include_once 'includes/_head.php';
     </ul>
 
     <ul id="products-container" class="products">
-    </ul>
-    <!-- <template id="product-template"> -->
-    <?php
-    $query = $dbCo->prepare("SELECT `id_product`, `name_product`, `price_product`, `picture` FROM `product`;");
-
+        <!-- <template id="product-template"> -->
+            <?php
+    $query = $dbCo->prepare("SELECT `id_product`, `name_product`, `price_product` FROM `product`;");
+    
     $isQueryOk = $query->execute();
-
+    
     foreach ($query->fetchAll() as $product) {
-    ?><li class="product-itm" >
-    <h2 class="product-ttl"><?=$product['name_product']?></h2>
-        <h3 class="product-price"><?=$product['price_product']?></h3>
-        <img class="product-img" src="./img/merch/<?=$product['picture']?>" alt="img">
-                </li>
+        ?><li class="product-itm" >
+            <h2 class="product-ttl"><?=$product['name_product']?></h2>
+            <h3 class="product-price"><?=$product['price_product']?></h3>
+            <img class="product-img" src="./img/merch/<?=$product['name_product']?>" alt="img">
+        </li>
         <?php
     }
-?>
+    ?>
 
-    <!-- <li class="product-itm">
-            <h2 class="product-ttl"></h2>
-            <h3 class="product-price"></h3>
-                   <img class="product-img" src="" alt=""> -->
-       
-    </template>
-    <template id="catgory-template">
-        <li>
-            <button class="nav-btn" data-style-name=""></button>
-        </li>
-    </template>
+<!-- <li class="product-itm">
+    <h2 class="product-ttl"></h2>
+    <h3 class="product-price"></h3>
+    <img class="product-img" src="" alt=""> -->
+    
+</template>
+<template id="catgory-template">
+    <li>
+        <button class="nav-btn" data-style-name=""></button>
+    </li>
+</template>
+</ul>
 
 
 </main>
@@ -57,4 +57,4 @@ include_once 'includes/_head.php';
 <!-------------------------------------
 -------------FOOTER--------------------
 -------------------------------------->
-<?= include_once "./includes/_footer.php" ?>
+<?= include "./includes/_footer.php" ?>

@@ -266,22 +266,27 @@ header {
 
 /****** products ******/
 
+.merch-title {
+  margin-top: 5rem;
+  justify-content: center;
+}
+
 .products {
   display: grid;
-  margin: 1rem;
   grid-template-columns: repeat(1, 1fr);
-  box-shadow: 1px 1px 1px rgb(179, 178, 178);
+  margin-bottom: 5rem;
+  margin-top : 1rem;
 }
 
 .product-itm {
   box-shadow: 1px 1px 1px 1px rgb(179, 178, 178);
   display: block;
-  margin: 0.1rem;
+  margin: 0;
   background-color: #ffffff;
   justify-items: center;
   text-align: center;
   /* border: 0.1rem solid #000000; */
-
+  
 }
 
 .product-ttl {
@@ -300,8 +305,8 @@ header {
   max-height: 150px;
 }
 
-.product-img:hover {
-  opacity: 0.5;
+.product-itm:hover {
+  background-color: #ffffff77;
 }
 
 
@@ -509,14 +514,15 @@ header {
   /*** Products Merch ***/
 
   .merch-title {
-    margin-top: 7rem;
-    margin-left: 3rem;
+    margin-top: 5rem;
     justify-content: center;
-    /* position:absolute;  */
   }
+
 
   .products {
     display: grid;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
     grid-template-columns: repeat(3, 1fr);
     /* background-color: #564b4b56; */
     /* box-shadow: 1px 1px 1px rgb(179, 178, 178); */
@@ -545,8 +551,8 @@ header {
     max-height: 200px;
   }
 
-  .product-img:hover {
-    opacity: 0.5;
+  .product-itm:hover {
+    background-color: #ffffff77;
   }
 
   /*** News Articles ***/
