@@ -19,28 +19,27 @@ if (isset($_GET['confirm'])) {
     $query = $dbCo->prepare("SELECT * FROM users WHERE login = :login AND pwd = :pwd ;");
 
     $isQueryOk = $query->execute([
-        'login' => $login,
-        'pwd' => $pwd,
-      ]);
+      'login' => $login,
+      'pwd' => $pwd,
+    ]);
     if ($query->rowCount() > 0) {
       // echo 'ok';
       header('Location: admin.php');
     } else {
       header('Location: connexion.php');
     }
-  } 
+  }
 }
 
 //-------------------------------//
 //--------- deconnection --------//
 //-------------------------------//
 
-// if (isset($_GET['action']) && $_GET['action'] === 'deconnexion') {
-//     unset($_SESSION['id_person']);
-//     $_SESSION['notif'] = 'Vous êtes déconnecté(e).';
-//     header('Location: index.php');
-//     exit;
-// }
+if (isset($_GET['action']) && $_GET['action'] === 'deconnexion') {
+  session_destroy();
+  header('Location: connexion.php');
+  exit;
+}
 ?>
 
 
