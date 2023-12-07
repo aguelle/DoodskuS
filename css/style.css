@@ -451,10 +451,14 @@ text-align: center;
   /* ---------------------- */
   
   .title {
-    position: relative;
-    margin: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffffd2;
     text-align: center;
     padding: 1rem;
+    margin: auto;
+    width: 100%;
   }
   
   .formadmin {
@@ -481,8 +485,7 @@ text-align: center;
     padding: 1rem;
     background-color: #ffffff59;
     margin: 2rem;
-    margin: auto;
-  }
+margin-top: 5rem;  }
   
   /******************************************************* DESKTOP STYLE **********************************************************/
   
@@ -801,12 +804,14 @@ text-align: center;
   }
 
 
-  /* ---------------------- */
-  /* ------ADMIN PAGE------ */
-  /* ---------------------- */
+  /* ------------------------- */
+  /* ------ ADMIN PAGE ------- */
+  /* ------------------------- */
 
   .title {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
     margin: auto;
     text-align: center;
     padding: 1rem;

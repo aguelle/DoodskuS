@@ -20,8 +20,11 @@ generateToken();
 <body>
 
     <main>
-        <h1 class="title">Admin Page</h1>
-        <?= getNotifHtml() ?>
+        <div class="title">
+            <h1 class="">Admin Page</h1>
+            <?= getNotifHtml() ?>
+        </div>
+
         <!-- --------- -->
         <!-- connexion -->
         <!-- --------- -->
