@@ -9,8 +9,9 @@ header('content-type:application/json');
 $data = json_decode(file_get_contents('php://input'), true);
 
 //-------------------------------------------------//
-//to add emiail in DB from admin page
+//---------Add email in DB from admin page---------//
 //-------------------------------------------------//
+
 if ($data['action'] === 'add' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (strlen($data['text']) <= 0) throwAsyncError('Merci de saisir une adresse email.');
@@ -32,9 +33,11 @@ if ($data['action'] === 'add' && $_SERVER['REQUEST_METHOD'] === 'POST') {
     ]);
     exit;
 }
+
 //-------------------------------------------------//
-//to add product in DB from admin page
+//-------Add product in DB from admin page---------//
 //-------------------------------------------------//
+
 else if ($data['action'] === 'addMerch' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (strlen($data['text']) <= 0 || strlen($data['int']) <= 0) throwAsyncError('Merci de saisir un nom de produit.');
@@ -56,9 +59,11 @@ else if ($data['action'] === 'addMerch' && $_SERVER['REQUEST_METHOD'] === 'POST'
     ]);
     exit;
 }
+
 //-------------------------------------------------//
-//to edit product in DB from admin page
+//------Edit product in DB from admin page---------//
 //-------------------------------------------------//
+
 else if ($data['action'] === 'editMerch' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if (strlen($data['text']) <= 0 || strlen($data['int']) <= 0) throwAsyncError('Merci de saisir un nom/prix de produit.');
@@ -81,9 +86,11 @@ else if ($data['action'] === 'editMerch' && $_SERVER['REQUEST_METHOD'] === 'POST
     ]);
     exit;
 }
+
 //-------------------------------------------------//
-//to delete product in DB from admin page
+//------Delete product in DB from admin page-------//
 //-------------------------------------------------//
+
 else if ($data['action'] === 'deleteMerch' && $_SERVER['REQUEST_METHOD'] === 'POST') {
 
     $query = $dbCo->prepare("DELETE FROM product WHERE id_product =:id_product;");
