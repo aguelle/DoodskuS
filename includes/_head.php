@@ -17,7 +17,6 @@ session_start();
 
 <body>
     <header>
-        <!-- nav mobile -->
         <nav>
             <div id="nav-mobile" class="nav-mobile">
 
@@ -46,7 +45,6 @@ session_start();
                 <img src="./img/Icones/burgerblack.png" alt="burger" class="burger hidden">
             </div>
 
-            <!-- nav desktop -->
             <div class="nav-desktop hidden">
 
                 <img id="logo-nav" src="img/Logos/logo3Resize.png" class="logo-nav">

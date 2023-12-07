@@ -36,4 +36,4 @@ include_once 'includes/_head.php';
 <!-------------------------------------
 -------------FOOTER--------------------
 -------------------------------------->
-<?= include_once "./includes/_footer.php" ?>
+<?php include_once "./includes/_footer.php" ?>

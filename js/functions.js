@@ -60,27 +60,3 @@ export async function fetchApi(method, data) {
         console.error('Unable to load api');
     }
 }
-/**
- * Call the api.php script asynchronously with the HTTP method given.
- * Data object will be sent into the request body. * 
- * 
- * @param {string} method 
- * @param {array} data 
- * @returns 
- */
-export async function fetchApiAdmin(method, data) {
-    try {
-        const response = await fetch('apiAdmin.php', {
-            method: method,
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify(data)
-        });
-
-        return response.json();
-    }
-    catch (error) {
-        console.error('Unable to load api');
-    }
-}

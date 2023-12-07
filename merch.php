@@ -57,4 +57,4 @@ include_once 'includes/_head.php';
 <!-------------------------------------
 -------------FOOTER--------------------
 -------------------------------------->
-<?= include "./includes/_footer.php" ?>
+<?php include "./includes/_footer.php" ?>

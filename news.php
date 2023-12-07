@@ -56,4 +56,6 @@ include_once 'includes/_head.php';
 <!-------------------------------------
 -------------FOOTER--------------------
 -------------------------------------->
-<?= include_once "./includes/_footer.php" ?>
+<script type="module" src="./js/news.js"></script>
+
+<?php include_once "./includes/_footer.php" ?>

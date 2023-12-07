@@ -10,11 +10,13 @@ include_once  'includes/_head.php';
 -------------------------------------->
 
 <main class="row">
-    <a href="merch.php"><img src="./img/Merch/poster promo.jpg" alt="poster promo" class="cta"></a>
-
+<div class="cta">
+<h2 class="cta-txt">NEW ALBUM OUT NOW - buy now!</h2>
+    <a href="merch.php"><img src="./img/merch/Vinyl Record2.png" alt="poster promo" class="cta-img"></a>
+</div>
 </main>
 
 <!-------------------------------------
 -------------FOOTER--------------------
 -------------------------------------->
-<?= include_once "./includes/_footer.php" ?>
+<?php include_once "./includes/_footer.php" ?>

@@ -42,6 +42,7 @@ document.getElementById("new_sub").addEventListener("submit", function (event) {
     action: "add",
     token: utils.getToken(),
     text: this.querySelector('input[name="new_sub"]').value,
+    int:this.querySelector('#newsletter').value
   };
 
   if (data.text.length < 1) {
