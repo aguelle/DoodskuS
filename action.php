@@ -9,28 +9,38 @@ require_once './includes/_notif.php';
 //-----------------------------//
 
 // Validation du formulaire
-if (isset($_POST['confirm'])) {
+if (isset($_GET['confirm'])) {
 
-  if (isset($_POST['login']) && isset($_POST['pwd'])) {
-    $login = htmlspecialchars($_POST['login']);
-    $pwd = htmlspecialchars($_POST['pwd']);
+  if (isset($_GET['login']) && isset($_GET['pwd'])) {
+    //strip_tags pour éviter les failles XSS en retirant les balises html et php.
+    $login = strip_tags($_GET['login']);
+    $pwd = strip_tags($_GET['pwd']);
 
-    $query = $dbCo->prepare("SELECT * FROM `users' WHERE login = :login AND pwd = :pwd ;");
+    $query = $dbCo->prepare("SELECT * FROM users WHERE login = :login AND pwd = :pwd ;");
 
-    $isQueryOk = $query->execute(
-      [
+    $isQueryOk = $query->execute([
         'login' => $login,
-        'pwd' => $pwd
-      ]
-    );
-    if ($Query->rowCount() > 0) {
-      echo 'ok';
+        'pwd' => $pwd,
+      ]);
+    if ($query->rowCount() > 0) {
+      // echo 'ok';
+      header('Location: admin.php');
     } else {
-      echo "login ou mot de passe incorrect";
+      header('Location: connexion.php');
     }
-  } else {
-  }
+  } 
 }
+
+//-------------------------------//
+//--------- deconnection --------//
+//-------------------------------//
+
+// if (isset($_GET['action']) && $_GET['action'] === 'deconnexion') {
+//     unset($_SESSION['id_person']);
+//     $_SESSION['notif'] = 'Vous êtes déconnecté(e).';
+//     header('Location: index.php');
+//     exit;
+// }
 ?>
 
 

@@ -14,7 +14,7 @@ generateToken();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".\css\style.css">
-    <title>Doodskus Admin</title>
+    <title>Doodskus Connexion</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@ generateToken();
         <!-- --------- -->
         <!-- connexion -->
         <!-- --------- -->
-        <form id="connexion" class="formadmin-connexion" action="action.php" method="post">
+        <form id="connexion" class="formadmin-connexion" action="action.php" method="get">
             <input class="form-text" id="login" type="text" name="login" placeholder="login" require >
             <input class="form-text" id="pwd" type="password" name="pwd" placeholder="Mot de passe" require>
             <input id="token" type="hidden" name="token" value="<?= $_SESSION['token'] ?>">
